@@ -1,0 +1,17 @@
+# Ensure consistent line endings
+* text=auto
+
+# Treat JSON, CSS, SCSS, JS, PHP as text
+*.json text
+*.css text
+*.scss text
+*.js text
+*.php text
+*.html text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary

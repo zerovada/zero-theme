@@ -1,0 +1,10 @@
+@use "./_variables.scss" as *;
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f4;
+  color: #333;
+}
+
+a {
+  color: $zero-green;
+}

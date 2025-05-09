@@ -1,0 +1,23 @@
+# Node, build output
+node_modules/
+dist/
+
+# Composer / PHP vendor
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+.idea/
+.vscode/
+
+# Logs and temp files
+*.log
+tmp/
+.cache/
+
+# WordPress-specific
+wp-config*.php
+wp-content/uploads/

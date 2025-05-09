@@ -1,0 +1,55 @@
+{
+  "name": "zero-theme",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "**Zero** is a lightweight, performance-first WordPress theme built for flexibility and speed—comparable to Modern Wordpress Theme.",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "vite",
+    "build": "vite build",
+    "lint:js": "eslint assets/js --fix",
+    "lint:css": "stylelint \"assets/scss/**/*.scss\" --config stylelint.config.cjs",
+    "format": "prettier --write \"**/*.{js,scss,json,md,php}\""
+  },
+  "lint-staged": {
+    "assets/js/**/*.js": [
+      "npm run lint:js",
+      "npm run format"
+    ],
+    "assets/scss/**/*.scss": [
+      "npm run lint:css",
+      "npm run format"
+    ],
+    "*.{json,md,php,js,scss}": [
+      "npm run format"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "@woocommerce/eslint-plugin": "^2.2.0",
+    "@wordpress/eslint-plugin": "^22.9.0",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "eslint": "^9.26.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.11.0",
+    "eslint-plugin-jsdoc": "^50.6.11",
+    "eslint-plugin-react": "^7.37.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "sass": "^1.87.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.0",
+    "vite": "^6.3.5"
+  }
+}
