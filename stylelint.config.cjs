@@ -4,7 +4,9 @@ module.exports = {
   customSyntax: 'postcss-scss',
 
   // 2. Base shareable config for SCSS + standard rules
-  extends: 'stylelint-config-standard-scss',
+  extends: [ 'stylelint-config-standard-scss',
+    'stylelint-config-recess-order',
+  ],
 
   // 3. Plugins for SCSS features and property ordering
   plugins: [

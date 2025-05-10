@@ -1,25 +1,54 @@
 {
-    "version": 2,
-    "settings": {
-        "layout": {
-            "contentSize": "800px",
-            "wideSize": "1200px"
-        },
-        "appearanceTools": true,
-        "spacing": {
-            "units": [ "px", "%", "em", "rem", "vh", "vw" ]
-        },
-        "typography": {
-            "customFontSize": true,
-            "customLineHeight": true
-        },
-        "color": {
-            "custom": true,
-            "gradients": true
-        }
-        },
-        "styles": {},
-        "customTemplates": [],
-        "templateParts": []
-
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": true,
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "primary",   "color": "#3D52A0", "name": "Primary" },
+        { "slug": "secondary", "color": "#7091E6", "name": "Secondary" },
+        { "slug": "text",      "color": "#626577", "name": "Text" },
+        { "slug": "background","color": "#ADBBDA", "name": "Background" }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug":"small",  "size":"0.875rem","name":"Small" },
+        { "slug":"normal", "size":"1rem",    "name":"Normal" },
+        { "slug":"large",  "size":"1.25rem", "name":"Large" },
+        { "slug":"xlarge", "size":"2rem",    "name":"X-Large" }
+      ],
+      "lineHeights": [
+        { "slug":"normal", "lineHeight":"1.5", "name":"Normal" },
+        { "slug":"loose",  "lineHeight":"2",   "name":"Loose" },
+        { "slug":"tight",  "lineHeight":"1",   "name":"tight" }
+      ],
+      "fontFamilies": [
+        { "fontFamily": "'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", "name":"Sans Serif", "slug":"sans" },
+        { "fontFamily": "'Bricolage Grotesque', sans-serif", "name":"Serif",      "slug":"serif" }
+      ]
+    },
+    "spacing": {
+      "units": ["px","%","rem","vw"],
+      "customPadding": true,
+      "padding": [
+        {"slug":"small","size":"0.5rem","name":"Small"},
+        {"slug":"normal","size":"1rem","name":"Normal"},
+        {"slug":"large","size":"2rem","name":"Large"}
+      ]
+    },
+    "custom": {
+      "containerWidth": {
+        "type": "number",
+        "default": 1200
+      }
     }
+  },
+  "styles": {
+    "elements": {
+      "h1": {"typography":{"fontSize":"2rem"}},
+      "h2": {"typography":{"fontSize":"1.75rem"}}
+    }
+  }
+}

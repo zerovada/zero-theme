@@ -1,0 +1,17 @@
+
+
+.wp-full-overlay-sidebar {
+  background: #f9f9f9;
+  width: 320px;
+  .accordion-section {
+    background: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: space(1);
+    .accordion-section-title {
+      padding: space(0.75);
+      font-weight: bold;
+    }
+  }
+  .zero-color-field { width: 100%; margin-top: space(0.5); }
+}

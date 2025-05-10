@@ -1,0 +1,51 @@
+// assets/scss/style.scss
+// ───────────────────────────────────────────────────────────────
+// Zero Theme Design Tokens
+// All tokens are exposed as CSS custom properties
+// @Zero
+// ───────────────────────────────────────────────────────────────
+
+
+// Colors
+$color-primary:        #3D52A0 !default;
+$color-secondary:      #7091E6 !default;
+$color-text:           #626577 !default;
+$color-headings:       #27293B !default;
+$color-background:     #ADBBDA !default;
+$color-link:           #146EB4 !default;
+$color-link-hover:     #FF9900 !default;
+
+// Typography
+$font-body:     'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !default;
+$font-family-sans: $font-body !default;
+$font-heading:    'Bricolage Grotesque', sans-serif !default;
+$font-family-mono:     Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+
+// Font Sizes (modular scale)
+$font-size-base:       1rem !default; // 16px
+$font-size-scale-ratio:1.2 !default; // Ratio for H1–H6
+$line-height-base:     1.5 !default;
+$font-size-scale-max:   6  !default;
+
+// Spacing scale
+$spacing-scale: (
+  0: 0,
+  1: 0.25rem,   // 4px
+  2: 0.5rem,    // 8px
+  3: 1rem,      // 16px
+  4: 1.5rem,    // 24px
+  5: 2rem,      // 32px
+  6: 3rem       // 48px
+) !default;
+
+
+// Borders & Radii
+$border-radius-base:   4px !default;
+$border-radius-lg:     8px !default;
+
+// Breakpoints
+$breakpoint-sm:        576px !default;
+$breakpoint-md:        768px !default;
+$breakpoint-lg:        992px !default;
+$breakpoint-xl:        1200px !default;
+

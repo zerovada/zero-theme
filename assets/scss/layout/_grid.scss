@@ -1,0 +1,15 @@
+
+@use "sass:math";
+
+.row { display: flex; flex-wrap: wrap; margin-left: -space(1); margin-right: -space(1); }
+
+.col { padding-left: space(1); padding-right: space(1); flex: 1 0 auto; }
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex-basis: math.percentage( math.div($i, 12) );
+  }
+  .col-offset-#{$i} {
+    margin-left: math.percentage( math.div($i, 12) );
+  }
+}

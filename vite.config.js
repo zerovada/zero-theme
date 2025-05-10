@@ -33,18 +33,21 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "variables" as *;\n`,
-        includePaths: [
-          path.resolve(__dirname, 'assets/scss')
-        ]
-      }
+        includePaths: [ path.resolve(__dirname, 'assets/scss/settings') ],
+        additionalData: `
+        @use "settings/variables" as *;
+        @use "settings/mixins" as *;
+        @use "settings/fonts" as *;
+         `,
+       // includePaths: [
+        //  path.resolve(__dirname, 'assets/scss'),
+        //  path.resolve(__dirname, 'assets/scss/settings')
+       // ]
+      },
     },
     postcss: {
-      plugins: [
-        autoprefixer(),
-        cssnano({ preset: 'default' }),
-      ]
-    }
+      plugins: [autoprefixer(), cssnano({ preset: 'default' })],
+    },
   },
   resolve: {
     alias: {

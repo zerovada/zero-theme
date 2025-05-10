@@ -1,0 +1,23 @@
+// assets/scss/fonts.scss
+// ─────────────────────────────────────────────────────────────────
+// Self-hosted variable and static fonts for Zero Theme
+// ─────────────────────────────────────────────────────────────────
+@use '../settings/variables' as *;
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../fonts/SourceSans3VF-Upright.woff2') format('woff2'),
+       url('../fonts/SourceSans3VF-Upright.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../fonts/BricolageGrotesque-Variable.woff2') format('woff2'),
+       url('../fonts/BricolageGrotesque-Variable.ttf')  format('truetype');
+}

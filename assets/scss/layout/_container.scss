@@ -1,0 +1,15 @@
+@use "../settings/variables" as *;
+@use "../settings/mixins" as *;
+
+.site-container {
+  max-width: 100%; // will be overridden via customizer
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: space(1);
+  padding-right: space(1);
+
+  @include respond-above($breakpoint-md) {
+    padding-left: space(2);
+    padding-right: space(2);
+  }
+}

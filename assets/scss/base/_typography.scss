@@ -1,0 +1,31 @@
+@use "../settings/variables" as *;
+
+// Root font-size for rem
+html { font-size: 100%; }
+
+// Base body styles
+body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+// Headings H1–H6 using modular scale
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $font-heading;
+    font-size: ms(6 - $i); // H1 = highest scale
+    line-height: $line-height-base;
+    color: $color-headings;
+    margin-bottom: space(1);
+  }
+}
+
+// Links
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover { color: $color-link-hover; }
+}

@@ -1,10 +1,16 @@
-@use "./_variables.scss" as *;
-body {
-  font-family: sans-serif;
-  background-color: #f9f9f4;
-  color: #333;
-}
+// assets/scss/style.scss
+// ───────────────────────────────────────────────────────────────
+// Zero Theme Design Tokens
+// All tokens are exposed as CSS custom properties on :root
+// ───────────────────────────────────────────────────────────────
 
-a {
-  color: $zero-green;
-}
+@use "settings/variables" as *;
+@use 'settings/mixins' as *;
+@use 'settings/fonts' as *;
+@use "./base/typography" as *;
+@use 'base/reset';
+@use 'base/utilities';
+@use 'layout/container';
+@use 'layout/grid';
+@use 'components/helpers';
+@use 'customizer/customizer';

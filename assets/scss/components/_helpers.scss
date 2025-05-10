@@ -1,0 +1,7 @@
+@use "../base/utilities" as *;
+
+// Screen reader only
+.sr-only { @extend %visually-hidden; }
+
+// Clearfix utility
+.clearfix { @extend %clearfix; }
