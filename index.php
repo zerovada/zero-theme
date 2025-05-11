@@ -1,23 +1,13 @@
 <?php
-/**
- * Main template file — placeholder for Zero Theme
- *
- * @package Zero
- */
-
-namespace Zero;
-
-// 1. Load the header (this pulls in all three header rows)
 get_header();
-?>
 
-<main id="primary" class="site-main wrapper">
-  <section class="zero-test-content" style="text-align:center; padding: 4rem 0;">
-    <h1>✅ Zero Theme is Active!</h1>
-    <p>Your static header is working and this is placeholder content.</p>
-  </section>
-</main>
+if ( have_posts() ) :
+  while ( have_posts() ) : the_post();
+    the_title( '<h1>', '</h1>' );
+    the_content();
+  endwhile;
+else :
+  echo '<p>' . esc_html__( 'Nothing found', 'zero' ) . '</p>';
+endif;
 
-<?php
-// 2. Load the footer (you’ll build this in Sprint 2.5)
 get_footer();
