@@ -53,7 +53,7 @@ class Theme_Options {
             'text_color'             => '#626577',
             'link_color'             => '#146EB4',
             'heading_color'          => '#27293B',
-            'background_color'       => '#ADBBDA',
+            'background_color'       => '#FFFFFF',
 
             // Typography
             'body_font_family'       => 'sans',

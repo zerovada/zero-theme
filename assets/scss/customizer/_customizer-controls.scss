@@ -1,0 +1,53 @@
+// Customizer Controls Pane Styles for Zero Theme
+
+// Style the description under toggles
+.customize-control-site_title_toggle .description,
+.customize-control-site_tagline_toggle .description {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+// Add some spacing around the panel titles
+.wp-full-overlay-sidebar .customize-panel-title {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e1e4e6;
+}
+
+// Tweak the color picker control layout
+.customize-control-color .wp-picker-container {
+  margin-top: 0.5rem;
+}
+
+// Typography control group
+.customize-control-typography .typography-settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+// Range slider labels
+.customize-control-range .range-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+// Preset selector grid
+.customize-control-preset .preset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+// Sortable list handles
+.customize-control-sortable .sortable-list .item {
+  cursor: move;
+  display: flex;
+  align-items: center;
+}
+.customize-control-sortable .sortable-list .item .handle {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}

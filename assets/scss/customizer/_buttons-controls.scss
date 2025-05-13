@@ -1,0 +1,27 @@
+// Buttons Controls Pane
+
+.customize-control-color,
+.customize-control-range {
+  .customize-control-title {
+    margin-bottom: 0.25rem;
+  }
+  input {
+    &.my-color-field {
+      max-width: 6rem;
+    }
+    &[type="range"] {
+      width: 100%;
+    }
+  }
+  .range-value {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+  }
+}
+
+// Organize sections with some spacing
+#customize-control-btn_primary_radius,
+#customize-control-btn_secondary_radius {
+  margin-bottom: 1rem;
+}

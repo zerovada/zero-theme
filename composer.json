@@ -1,20 +1,22 @@
 {
-    "name": "rajiv/zero-theme",
-"type": "wordpress-theme",
-"description": "Zero Theme for WordPress",
-"version": "1.0.0",
-    "autoload": {
-        "psr-4": {
-            "Zero\\": "inc/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Zero Theme",
-            "email": "hello@wpzero.one"
-        }
-    ],
-    "require": {
-	"php": ">=7.4"
-	}
+  "name": "rajiv/zero-theme",
+  "type": "wordpress-theme",
+  "description": "Zero Theme for WordPress",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Zero Theme",
+      "email": "hello@wpzero.one"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zero\\": "inc/",
+      "Zero\\Core\\Customizer\\Controls\\": "inc/customizer/controls/"
+    }
+  }
 }

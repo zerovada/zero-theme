@@ -24,6 +24,9 @@ class Theme {
         Theme_Options::init();
         Dynamic_CSS::init();
 
+        require_once get_template_directory() . '/inc/customizer/class-zero-customizer.php';
+        \Zero\Core\Customizer\Customizer::init();
+
         // Theme hooks
         add_action( 'after_setup_theme',         [ __CLASS__, 'setup' ] );
         add_action( 'wp',                        [ __CLASS__, 'set_content_width' ] );

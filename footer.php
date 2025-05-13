@@ -1,6 +1,6 @@
   <footer class="site-footer">
-    <!-- Your footer markup -->
+    <?php // your footer markup… ?>
   </footer>
-  <?php wp_footer(); ?>
+  <?php wp_footer(); // required for scripts & other hooks ?>
 </body>
 </html>

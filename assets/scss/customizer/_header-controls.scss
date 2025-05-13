@@ -1,0 +1,34 @@
+// Header Controls Pane
+
+.customize-control-color,
+.customize-control-range,
+.customize-control-checkbox,
+.customize-control-radio-image {
+  .customize-control-title {
+    margin-bottom: 0.25rem;
+  }
+}
+
+// Radio-Image list (reuse if you like)
+.radio-image-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  li {
+    label {
+      display: block;
+      border: 2px solid transparent;
+      padding: 4px;
+      cursor: pointer;
+    }
+    input:checked + img,
+    input:focus + img {
+      border-color: #0073e6;
+    }
+    img {
+      max-width: 64px;
+      display: block;
+    }
+  }
+}

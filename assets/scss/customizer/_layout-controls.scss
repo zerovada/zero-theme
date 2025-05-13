@@ -1,0 +1,35 @@
+// Dimension control
+.customize-control-range,
+.customize-control-number {
+  .customize-control-title {
+    margin-bottom: 0.25rem;
+  }
+  input {
+    width: 4rem;
+    margin-right: 0.25rem;
+  }
+}
+
+// Radio Image control
+.radio-image-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  li {
+    label {
+      display: block;
+      border: 2px solid transparent;
+      padding: 4px;
+      cursor: pointer;
+    }
+    input:checked + img,
+    input:focus + img {
+      border-color: #0073e6;
+    }
+    img {
+      max-width: 64px;
+      display: block;
+    }
+  }
+}

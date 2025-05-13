@@ -1,0 +1,16 @@
+.customize-control-range {
+  .customize-control-title {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .range-value {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,8 @@
+// assets/scss/customizer/colors-controls.scss
+
+@use "../settings/variables" as *;
+@use "../settings/mixins"    as *;
+@use "../settings/fonts"     as *;
+
+// Now pull in your partial for control-pane styles
+@use './colors-controls' as controls;

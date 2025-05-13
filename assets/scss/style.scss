@@ -6,11 +6,13 @@
 
 @use "settings/variables" as *;
 @use 'settings/mixins' as *;
-@use 'settings/fonts' as *;
-@use "./base/typography" as *;
+@use "./base/typography";
 @use 'base/reset';
 @use 'base/utilities';
 @use 'layout/container';
 @use 'layout/grid';
 @use 'components/helpers';
 @use 'customizer/customizer';
+//@use 'customizer/customizer-controls';
+//@use 'customizer/customizer-colors.scss'
+//@use "customizer/typography-controls" as controls;

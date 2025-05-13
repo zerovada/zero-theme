@@ -1,0 +1,21 @@
+
+
+// Customizer Color Controls
+
+.customize-control-color {
+  .customize-control-title {
+    margin-bottom: 0.5rem;
+  }
+  .wp-picker-container {
+    margin-top: 0.25rem;
+    .wp-color-result {
+      border-radius: 4px;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  input.my-color-field {
+    width: 100%;
+    max-width: 8rem;
+  }
+}
